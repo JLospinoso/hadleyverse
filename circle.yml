@@ -3,11 +3,9 @@ machine:
     - docker
 dependencies:
   override:
-    - docker pull rocker/hadleyverse 
+    - docker pull jlospinoso/hadleyverse
 
 
 test:
   override:
-    - docker run -ti rocker/hadleyverse R --version 
-
-
+    - docker run -ti jlospinoso/hadleyverse R --version

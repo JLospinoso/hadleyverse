@@ -1,5 +1,5 @@
 FROM rocker/rstudio
-MAINTAINER "Carl Boettiger and Dirk Eddelbuettel" rocker-maintainers@eddelbuettel.com
+MAINTAINER "Josh Lospinoso" josh@lospi.net
 
 ## LaTeX:
 ## This installs inconsolata fonts used in R vignettes/manuals manually since texlive-fonts-extra is HUGE
@@ -25,7 +25,7 @@ RUN apt-get update \
   && mktexlsr \
   && updmap-sys
 
-## Install some external dependencies. 
+## Install some external dependencies.
 RUN apt-get update \
   && apt-get install -y --no-install-recommends -t unstable \
     default-jdk \
@@ -62,7 +62,7 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/ \
   && rm -rf /tmp/downloaded_packages/ /tmp/*.rds
 
-## Install the Hadleyverse packages (and some close friends). 
+## Install the Hadleyverse packages (and some close friends).
 RUN install2.r --error \
     broom \
     DiagrammeR \
@@ -94,7 +94,7 @@ RUN install2.r --error \
     svglite \
     tibble \
     tufte \
-    xml2 
+    xml2
 
 ## Manually install (useful packages from) the SUGGESTS list of the above packages.
 ## (because --deps TRUE can fail when packages are added/removed from CRAN)

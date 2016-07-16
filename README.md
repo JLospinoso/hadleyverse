@@ -1,9 +1,10 @@
-rocker/hadleyverse
+jlospinoso/hadleyverse
 ==================
 
-[![Build Status](https://travis-ci.org/rocker-org/hadleyverse.svg?branch=master)](https://travis-ci.org/rocker-org/hadleyverse)
-[![Circle CI](https://circleci.com/gh/rocker-org/hadleyverse.svg?style=svg)](https://circleci.com/gh/rocker-org/hadleyverse)
+[![Circle CI](https://circleci.com/gh/jlospinoso/hadleyverse.svg?style=svg)](https://circleci.com/gh/jlospinoso/hadleyverse)
 
+
+(This is a fork of rocker-org's package.)
 See the [rocker-org Wiki](https://github.com/rocker-org/rocker/wiki/)
 for details on use and development of this Docker image.
 
